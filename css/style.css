@@ -6,17 +6,19 @@
 }
 body {
     font-family: 'Roboto', sans-serif;;
+    position: relative;
 }
 
 /* Header */
 header {
-    /* position: fixed; */
+    position: sticky;
     background-color: #ff6800;
     height: 60px;
     width: 100%;
     left: 0;
     top: 0;
     box-shadow: 0px 1px 4px;
+    z-index: 1;
 }
 
 .header.box {
@@ -57,31 +59,48 @@ a {
 
 /* Main */
 main {
-    margin-top: 100px;
+    margin: 100px 0px;
+  
+    
 }
 
 .products {
     display: flex;
     flex-wrap: wrap;
-   
+    width: 80%;
+    margin: 0 auto;
 }
 
 .col {
     margin-top: 20px;
-    border: 1px solid red;
     width: calc( 100% / 3 );
     padding: 0 20px;
+   
 }
 
 .card {
-    /* width: 80%; */
+    width: 100%;
     height: auto;
+    position: relative;
 }
 
 .item {
     width: 100%;
-    height: auto;
+    height: auto;    
 }
+
+.item2 {
+    display: none;
+    position: absolute;
+
+}
+
+
+.item:hover {
+    display: block;
+    background-image: url(../img/1b.webp);
+}
+
 
 .smalltext {
     font-size: 12px;
@@ -96,4 +115,99 @@ main {
 .sbarrato {
     text-decoration: line-through;
     font-size: 14px;
+}
+
+/* Inside Card */
+
+.card span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 40px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    height: 15px;
+}
+.redbox {
+    background-color: red;
+    left:0;
+    width: 40px;
+}
+.greenbox {
+    background-color: green;
+    left: 45px;
+    width: 80px;
+}
+
+.greenboxfix{
+    background-color: green;
+    left: 0px;
+    width: 80px;
+}
+
+.heartbox {
+    position: absolute;
+    right: 0px;
+    top: 20px;
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.heart {
+    position: absolute;
+    background-color: white;
+}
+
+/* Fine Card */
+
+/* Hover! */
+
+
+/* Footer */
+footer {
+    background-color: black;
+    height: 100px;
+}
+
+.footerbox {
+    display: flex;
+    width: 80%;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.footerleft , .footerright {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    height: 100%;
+    line-height: 25px;
+    word-spacing: 1px;
+    position: relative;
+    width: 100%;
+}
+
+h3 {
+    color: white;
+}
+
+h5 {
+    color: white;;
+}
+
+.find {
+    position: absolute;
+    right:25px;
+}
+
+li {
+    list-style: none;
+    padding: 0 3px;
 }
