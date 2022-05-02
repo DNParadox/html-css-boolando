@@ -1,0 +1,21 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    background-color: #ff6800;
+    height: 120px;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+
+.header.box {
+    display: flex;
+    justify-content: center;
+}
