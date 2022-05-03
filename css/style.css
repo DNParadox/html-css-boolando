@@ -86,19 +86,24 @@ main {
 
 .item {
     width: 100%;
-    height: auto;    
+    height: auto; 
+    display: inline-block;
 }
 
 .item2 {
+    width: 100%;
+    height: auto; 
     display: none;
-    position: absolute;
-
 }
 
+.card .item:hover {
+    display: none;
+}
 
-.item:hover {
-    display: block;
-    background-image: url(../img/1b.webp);
+.card:hover  .item2{
+    display: inline-block;
+    width: 100%;
+    height: auto; 
 }
 
 
@@ -163,6 +168,10 @@ main {
 .heart {
     position: absolute;
     background-color: white;
+}
+
+.heart:hover {
+    color: red;
 }
 
 /* Fine Card */
